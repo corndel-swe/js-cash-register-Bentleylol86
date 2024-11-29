@@ -4,6 +4,8 @@
  * e.g. renameBook(recipeBook, "Good eats") => { title: 'Good eats' }
  */
 function renameBook(recipeBook, newName) {
+  recipeBook.title = newName ;
+  return recipeBook
   // code here
 }
 

@@ -3,6 +3,16 @@
  * in the array
  */
 function lastRecipe(recipeBook) {
+  if (recipeBook.recipes.length === 0) 
+    {
+  
+   return undefined;
+  }
+  //const lastTitle = (recipeBook.recipes[1].name);
+ //return lastTitle This just gives the last recipe
+
+ const lastTitle = recipeBook.recipes[recipeBook.recipes.length - 1].name; 
+ return lastTitle ;
   // code here
 }
 

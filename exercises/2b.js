@@ -3,6 +3,8 @@
  * the name of each recipe
  */
 function listNames(recipes) {
+  const nameOfrecipe = recipes.map(recipe => recipe.name ) ;
+  return nameOfrecipe ;
   // code here
 }
 

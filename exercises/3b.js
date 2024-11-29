@@ -2,7 +2,14 @@
  * Given a recipeBook containing recipes, returns the total number of servings in the book
  */
 function countServings(recipeBook) {
-  // code here
+  if (recipeBook.recipes.length === 0) {
+    return  0 ;
+  //this will require a for loop 
+  }
+  let totalServings = 0; 
+  for (let i = 0; i < recipeBook.recipes.length; i++) { 
+    totalServings += recipeBook.recipes[i].servings; } 
+    return totalServings;
 }
 
 // we've provided a sample object for debugging:
